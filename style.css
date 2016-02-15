@@ -66,7 +66,6 @@ body{
 #language{
 	width: 95vw;
 	margin: 0 auto;
-	height: 10000px;
 }
 #language h1{
 	font-size: 80px;
@@ -134,22 +133,21 @@ body{
 	color: #323455;
 	margin-top: 20px;
 	width: 90%;
+	
 }
-#lr{
-	margin-top: 250px;
+#words{
+	margin-top: 350px;
 }
-#lr-h1{
-	font-size: 70px;
-	text-decoration: underline;
+#word-h1{
+	font-size: 80px;
+	font-weight: 700;
+	margin-top: 100px;
+	color: #323455;
 }
-#lr h1{
-	font-size: 50px;
-}
-#lr-h2{
+#word-h2{
+	width: 350px;
 	font-weight: 300;
-	font-size: 38px;
+	font-size: 18px;
 	font-style: italic;
 	color: #323455;
-	margin-top: 20px;
-	width: 90%;
 }

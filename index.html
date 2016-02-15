@@ -6,6 +6,23 @@
 
     <!-- CSS !-->
     <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- JS !-->
+    <script type="text/javascript" src="jquery-1.12.0.min.js"></script>
+    <script type="text/javascript">
+      $(document).on('click', 'a[href^="#"]', function(e) {
+            var id = $(this).attr('href');
+            var $id = $(id);
+
+            if ($id.length === 0) {
+                return;
+            }
+          e.preventDefault();
+
+          var pos = $(id).offset().top;
+
+          $('body, html').animate({scrollTop: pos});
+          });
+    </script>
   </head>
   <body>
   	<div id="tint">
@@ -30,7 +47,7 @@
   				<h2 id="lang-h2">Outline/Learning Resources/Tools</h2>
   			</center>
   			<div id="outline">
-  				<h1 id="out-h1"># Outline #</h1>
+  				<h1 id="out-h1"style="text-decoration: underline;font-size: 60px;"># Outline #</h1>
   				<center>
   					<h2 id="outline-h2">This section will explain the outline of each step, and provide a little background if applicable. Once you have read this section, go to the ‘Learning Resources’ section and choose the resources appropriate for your level.</h2>
   				</center>
@@ -42,6 +59,8 @@
   						<a href="#grammar">2c. Grammar</a>
   						<a href="#lnp">2d. Listening & Production</a>
   						<a href="#practice">3. Practice</a>
+                                 <a href="#lr">4. Learning Resources</a>
+                                <a href="#tools">5. Tools</a>
   					</ul>
   				</center>
   				<div id="kana">
@@ -116,14 +135,181 @@
               When reading while aided by tools (as all beginners should be), it’s best for the purposes of learning to look at the words you’re looking up, and try to make an educated guess as to what the meaning is before completing your lookup, as guessing the answer helps with committing it to memory. It’s also a good idea to jump into the deep end of the difficulty pool from time to time. This is especially true at the very beginning even when you know it’s impossible, and that you’ll understand next to nothing and in general have a bad time of it, because it helps to have a better idea of where you are/were at in the larger scheme of consuming Japanese media, and where your current learning method is getting you. If you have no exposure to things which are difficult, then you will be unable to overcome them when you do meet them. If you only make use of beginner-level media, then you will only have proficiency in the language at that level. Similarly, in order to reach fluency in Japanese, the sources of media which you consume must also be varied in difficulty and content. 
             </center>
           </div>
-  			</div>
-
-        <div id="lr">
-          <h1 id="lr-h1"># Learning Resources #</h1>
-        </div>
+          <div id="lr">
+            <h1 id="lr-h1"style="text-decoration: underline;font-size: 60px;"># Learning Resources #</h1>
+            <center>
+             <h2 id="h2">Note: There is no “correct” way of learning, so we would recommend that you try out the resources appropriate for your level and see which one you feel is best. Use multiple resources if you wish.
+             </h2>
+             </center>
+        
+          <div id="lr-kana">
+            <h1>Kana</h1>
+            <center>
+                <h2 id="h2">
+                  The recommended procedure for learning Kana is to download an Anki deck and to grind it until you know it.
+                </h2>
+                <ul id="links">
+                  <a href="https://ankiweb.net/shared/info/2136150393">Hiragana </a>
+                 <a href="https://ankiweb.net/shared/info/183933952">Katakana</a>
+                 </ul>
+            </center> 
   		</div>
-  		<div id="words"></div>
+            <div id="lr-kanji">
+                <h1>Kanji</h1>
+                <center>
+                    <ul id="links">
+                        <a href="http://kanji.koohii.com/">Heisig</a>
+                        <a href="http://kanjidamage.com/">KanjiDamage</a>
+                        <a href="">Anki</a>
+                        <a href="http://www.genetickanji.com/">GeneticKanji</a>
+                    </ul>
+                </center> 
+            </div>
+            <div id="lr-vocabulary">
+                <h1>Vocabulary</h1>
+                <center>
+                    <ul id="links">
+                       <a href="">Anki Shared Decks</a>
+                       <a href="http://www.japanesepod101.com">Japanese Pod 101</a>
+                       <a href="http://www.guidetojapanese.org/learn/grammar">Tae Kim</a>
+                       <a href="http://pastebin.com/w0gRFM0c">Genki</a>
+                       <a href="http://pastebin.com/w0gRFM0c">Japanese the Manga Way</a>
+                       <a href="http://www.tanos.co.uk/jlpt/jlpt1/grammar/combined/">JLPT Grammar List</a>
+                    </ul>
+                </center> 
+            </div>
+            </div>
+            <div id="tools">
+              <h1 style="text-decoration: underline;font-size: 60px;"># Tools #</h1>
+              <div id="typing">
+                    <h1>Typing Japanese</h1>
+                    <center>
+                      <h2 id="h2">
+                          Input Method Editor (IME) - It will allow you to type in Japanese using your keyboard. Required.
+                          (Note: Both Mac and Windows have IME’s already pre-installed but it’s not as feature-full as Google IME.)
+                      </h2>
+                      <ul id="links">
+                       <a href="http://www.google.com/ime/">Google IME</a>
+                       <a href="https://github.com/google/mozc">Mozc</a>
+                       <a href="http://www.localizingjapan.com/blog/2012/05/29/japanese-input-on-ubuntu-linux-12-04-lts-precise-pangolin/">iBus</a>
+                    </ul>
+                    </center>
+                  </div>
+            </div>
+  		<div id="words">
+            <center>
+                <h1 id="word-h1">100 most common Japanese words</h1>
+                <h2 id="word-h2">/日本語の頻出100単語</h2>
+             </center>
+            <div id="jap">
+                <h1>
+                    __の<br>               
+＿に     <br>           
+＿だ     <br>          
+＿と     <br>          
+＿する   <br>            
+ない     <br>          
+いる     <br>           
+＿も     <br>           
+ある     <br>           
+__から   <br>             
+こと     <br>          
+なる     <br>           
+その＿   <br>             
+__です   <br>             
+それ     <br>         
+そう     <br>          
+人 （ひと） <br>       
+言う (いう<br>)       
+物（もの） <br>      
+この__   <br>           
+来る（くる）<br>      
+思う（おもう）<br>       
+一（いち）       <br> 
+見る（みる）     <br>  
+何（なに）      <br>  
+二（に）        <br>
+__まで        <br>    
+__達（たち）     <br>   
+自分（じぶん）   <br>     
+___だけ       <br>        
+私（わたし）       <br>
+中（なか）        <br>
+これ                <br>
+顔（かお）       <br>
+出来る（できる） <br>                             
+良い（いい）        <br> 
+彼（かれ）        <br> 
+手（て）        <br> 
+声（こえ）        <br> 
+目（め）        <br> 
+やる               <br>  
+どう               <br>                                           
+前（まえ）        <br> 
+でも                <br> 
+男（おとこ）        <br> 
+あの___             <br>    
+者（もの）        <br> 
+出る（でる）        <br> 
+知る（しる）        <br> 
+十（じゅう）        <br> 
+もう               <br> 
+行く（いく）       <br> 
+三（さん）        <br> 
+わかる               <br>  
+そんな__       <br> 
+くれる             <br> 
+切る（きる）       <br> 
+ところ               <br> 
+時（とき）        <br> 
+彼女（かのじょ）<br> 
+ここ              <br> 
+そして               <br> 
+今（いま）       <br> 
+上（うえ）        <br> 
+女（おんな）        <br> 
+気（き）        <br> 
+付く（つく）        <br> 
+しかし                <br> 
+ため               <br> 
+また              <br> 
+俺（おれ）       <br> 
+聞く（きく）       <br> 
+__ほど                <br> 
+僕（ぼく）       <br> 
+見える（みえる） <br>                            
+＿より       <br>         
+家（いえ）     <br>   
+日（ひ）       <br> 
+考える（かんがえる）  <br> 
+出す（だす）        <br> 
+そこ             <br>    
+入る（はいる）       <br>  
+持つ（もつ）        <br> 
+口（くち）       <br> 
+話（はなし）        <br> 
+わけ             <br>    
+けど             <br>    
+など             <br>    
+あなた           <br>     
+音（おと）       <br> 
+頭（あたま）      <br> 
+言葉（ことば）       <br> 
+まだ             <br>    
+__まま           <br>     
+かける           <br>     
+間（あいだ）    <br> 
+どこ             <br>   
+                </h1> 
+            </div>
+            <div id="pos">
+
+
+            </div id="meaning">
+
+           </div>
   		<div id="emojis"></div>
   	</div>
+
   </body>
 </html>
