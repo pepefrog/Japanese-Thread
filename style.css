@@ -136,9 +136,10 @@ body{
 	
 }
 #words{
-	margin-top: 350px;
+	width: 95vw;
+	margin: 350px auto;
 }
-#word-h1{
+#word h1{
 	font-size: 80px;
 	font-weight: 700;
 	margin-top: 100px;
@@ -150,4 +151,13 @@ body{
 	font-size: 18px;
 	font-style: italic;
 	color: #323455;
+}
+#jap{
+	float: left;
+	width: 30%;
+}
+#meaning{
+	float: right;
+	margin-right: 10px;
+	margin-top: -1740px;
 }
