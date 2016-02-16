@@ -151,15 +151,6 @@ body{
 	font-style: italic;
 	color: #323455;
 }
-#jap{
-	float: left;
-	width: 30%;
-}
-#meaning{
-	float: right;
-	margin-right: 10px;
-	margin-top: -1740px;
-}
 #emojis{
 	width: 95vw;
 	margin: 350px auto;
